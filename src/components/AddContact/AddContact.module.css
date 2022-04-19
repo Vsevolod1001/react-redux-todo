@@ -1,0 +1,13 @@
+.Formdiv {
+    border: 8px solid tomato;
+    width: 330px;
+    height: 200px;
+    text-align: center;
+    padding-top: 30px;  
+}
+.ContactLable{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
