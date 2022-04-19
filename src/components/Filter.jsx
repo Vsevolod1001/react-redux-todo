@@ -1,4 +1,9 @@
-export const Filter = ({ setFilter, filter }) => {
+import { useDispatch, useSelector } from 'react-redux';
+import { getFilter } from 'redux/selectors';
+import { filterContact } from 'redux/todosSlice';
+export const Filter = () => {
+  const dispatch = useDispatch();
+  const filter = useSelector(getFilter);
   return (
     <div>
       <label>
@@ -6,7 +11,7 @@ export const Filter = ({ setFilter, filter }) => {
         <input
           type="text"
           value={filter}
-          onChange={e => setFilter(e.currentTarget.value)}
+          onChange={e => dispatch(filterContact(e.currentTarget.value))}
         />
       </label>
     </div>
