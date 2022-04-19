@@ -1,7 +1,7 @@
 import s from './AddContact.module.css';
 import { useState } from 'react';
 import shortid from 'shortid';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addTodo } from 'redux/todosSlice';
 // import { getContacts } from 'redux/selectors';
 
