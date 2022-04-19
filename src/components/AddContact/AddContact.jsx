@@ -53,7 +53,7 @@ export const AddContact = () => {
         />
       </label>
 
-      <button type="button">add</button>
+      <button type="submit">add</button>
     </form>
   );
 };

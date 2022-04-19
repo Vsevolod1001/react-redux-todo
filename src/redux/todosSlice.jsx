@@ -26,7 +26,10 @@ const todosSlice = createSlice({
     //   state.push(newTodo);
     // },
     deleteTodo: (state, action) => {
-      return state.filter(todo => todo.id !== action.payload.id);
+      return {
+        items: state.items.filter(todo => todo.id !== action.payload),
+        filter: '',
+      };
     },
     filterContact: (state, { payload }) => {
       return { ...state, filter: payload };
